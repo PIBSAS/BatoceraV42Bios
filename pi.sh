@@ -25,7 +25,7 @@ cd
 mkdir ../bios/neocd
 mkdir ../bios/keropi
 mkdir ../bios/dc
-#mkdir ../bios/ps2
+mkdir ../bios/ps2
 mkdir ../bios/amiga
 mkdir ../bios/quasi88
 mkdir ../bios/np2kai
@@ -43,6 +43,8 @@ mkdir ../bios/GC
 mkdir ../bios/GC/EUR
 mkdir ../bios/GC/JAP
 mkdir ../bios/GC/USA
+mkdir ../bios/Oric
+mkdir ../bios/psvita
 cd
 echo
 rm ../bios/ATARIOSA.ROM
@@ -50,6 +52,7 @@ rm ../bios/ATARIOSB.ROM
 rm ../bios/ATARIXL.ROM
 rm ../bios/ATARIBAS.ROM
 rm ../bios/5200.rom
+rm ../bios/64DD_IPL.bin
 rm ../bios/tos.img
 rm ../bios/tos100fr.img
 rm ../bios/tos100uk.img
@@ -130,7 +133,7 @@ rm ../bios/scph5500.bin
 rm ../bios/scph5501.bin
 rm ../bios/scph5502.bin
 rm ../bios/scph7001.bin
-#rm ../bios/ps2/ps2-0230a-20080220.bin
+rm ../bios/ps2/ps2-0230a-20080220.bin
 #rm ../bios/EROM.BIN
 #rm ../bios/ROM2.BIN
 #rm ../bios/SCPH30004R.MEC
@@ -349,6 +352,8 @@ rm ../bios/GC/USA/IPL.bin
 #rm ../bios/nb_48gc.zip
 #rm ../bios/votrax.zip
 #rm ../bios/cerbios.bin
+rm ../bios/Oric/basic11.rom
+rm ../bios/Oric/colour.rom
 echo
 echo "Sistema listo para su correcta instalacion"
 echo "System ready for right installation"
@@ -435,6 +440,12 @@ echo
 wget -c "${RUTA}o2rom.bin" -P ../bios/
 wget -c "${RUTA}c52.bin" -P ../bios/
 echo
+echo "###### Oric Atmos ######"
+# https://github.com/TomHarte/CLK
+echo
+wget -c "${RUTA}Oric/basic11.rom" -P ../bios/Oric/
+wget -c "${RUTA}Oric/colour.rom" -P ../bios/Oric/
+echo
 echo "###### Videopac+ G7400 ######"
 echo
 wget -c "${RUTA}g7400.bin" -P ../bios/
@@ -491,6 +502,7 @@ echo "###### SEGA DREAMCAST ######"
 echo
 wget -c "${RUTA}dc_boot.bin" -P ../bios/
 wget -c "${RUTA}dc_flash.bin" -P ../bios/
+wget -c "${RUTA}dc/dc_boot.bin" -P ../bios/dc/
 echo
 echo "###### SEGA NAOMI ######"
 # https://github.com/libretro/libretro-super/blob/master/dist/info/flycast_libretro.info
@@ -529,12 +541,18 @@ wget -c "${RUTA}scph5501.bin" -P ../bios/
 wget -c "${RUTA}scph5502.bin" -P ../bios/
 wget -c "${RUTA}scph7001.bin" -P ../bios/
 echo
-#echo "###### SONY PS2 ######"
+echo "###### SONY PS2 ######"
 # https://pcsx2.net/config-guide/official-english-pcsx2-configuration-guide.html#Bios
 # use the last USA bios which can run NTSC and PAL games
 echo
-#wget -c "${RUTA}ps2-0230a-20080220.bin" -P ../bios/ps2/
+wget -c "${RUTA}ps2-0230a-20080220.bin" -P ../bios/ps2/
 echo
+echo "###### SONY PSVita ######"
+# https://wiki.batocera.org/systems:psvita
+echo
+wget -c "${RUTA_B}psvita/PSP2UPDAT.PUP" -P ../bios/psvita/
+wget -c "${RUTA_B}psvita/PSVUPDAT.PUP" -P ../bios/psvita/
+echo # I dont know compatibility yet
 #echo "###### SONY PS3 ######"
 # https://www.playstation.com/en-us/support/system-updates/ps3/
 echo
@@ -580,6 +598,11 @@ wget -c "${RUTA}sgb_boot.bin" -P ../bios/
 wget -c "${RUTA}sgb2_boot.bin" -P ../bios/
 wget -c "${RUTA}SGB1.sfc" -P ../bios/
 wget -c "${RUTA}SGB2.sfc" -P ../bios/
+echo
+echo
+echo "###### NINTENDO 64DD ######"
+echo
+wget -c "${RUTA}64DD_IPL.bin" -P ../bios/
 echo
 echo "###### Microsoft MSX ######"
 # https://docs.libretro.com/library/fmsx/#bios
