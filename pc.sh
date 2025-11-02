@@ -558,8 +558,8 @@ echo
 echo "###### SONY PSVita ######"
 # https://wiki.batocera.org/systems:psvita
 echo
-wget -c "${RUTA}psvita/PSP2UPDAT.PUP" -P ../bios/psvita/
-wget -c "${RUTA}psvita/PSVUPDAT.PUP" -P ../bios/psvita/
+wget -c "${RUTA_B}psvita/PSP2UPDAT.PUP" -P ../bios/psvita/
+wget -c "${RUTA_B}psvita/PSVUPDAT.PUP" -P ../bios/psvita/
 echo
 echo "###### NINTENDO FAMILY DISK SYSTEM ######"
 # https://docs.libretro.com/library/fceumm/#bios
