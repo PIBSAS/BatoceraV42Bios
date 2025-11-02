@@ -114,6 +114,7 @@ rm ../bios/panafz1.bin
 rm ../bios/panafz10.bin
 rm ../bios/goldstar.bin
 rm ../bios/dc_boot.bin
+rm ../bios/dc/dc_boot.bin
 rm ../bios/dc_flash.bin
 rm ../bios/dc/naomi.zip
 rm ../bios/dc/awbios.zip
@@ -501,7 +502,7 @@ echo "###### SEGA DREAMCAST ######"
 echo
 wget -c "${RUTA}dc_boot.bin" -P ../bios/
 wget -c "${RUTA}dc_flash.bin" -P ../bios/
-wget -c "${RUTA}dc/dc_boot.bin" -P ../bios/dc/
+wget -c "${RUTA}dc_boot.bin" -P ../bios/dc/
 echo
 echo "###### SEGA NAOMI ######"
 # https://github.com/libretro/libretro-super/blob/master/dist/info/flycast_libretro.info
