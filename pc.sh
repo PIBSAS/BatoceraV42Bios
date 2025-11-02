@@ -1,6 +1,6 @@
 #!/bin/bash
 ###########################################################################
-# Repositorio: BatoceraV41Bios 2024
+# Repositorio: BatoceraV42Bios 2025
 # Por: Luciano's tech ("https://sites.google.com/view/lucianostech/)
 # License: http://creativecommons.org/licenses/by-sa/4.0/
 ###########################################################################
@@ -14,7 +14,7 @@ echo
 echo "Limpiando las bios basura que te descargaste de otro lado o las mismas si se te corto internet"
 echo "Cleaning the garbage bios downloaded from other sites or from this site but if you internet shutdown in the process"
 echo
-RUTA=https://raw.githubusercontent.com/PIBSAS/BatoceraV41Bios/main/bios/
+RUTA=https://raw.githubusercontent.com/PIBSAS/BatoceraV42Bios/main/bios/
 RUTA_ARCH="https://archive.org/download/bios_batocera/BatoceraV39Bios/bios/"
 RUTA_B="https://archive.org/download/bios_batocera/"
 echo
@@ -43,6 +43,8 @@ mkdir ../bios/GC
 mkdir ../bios/GC/EUR
 mkdir ../bios/GC/JAP
 mkdir ../bios/GC/USA
+mkdir ../bios/Oric
+mkdir ../bios/psvita
 cd
 echo
 rm ../bios/ATARIOSA.ROM
@@ -50,6 +52,7 @@ rm ../bios/ATARIOSB.ROM
 rm ../bios/ATARIXL.ROM
 rm ../bios/ATARIBAS.ROM
 rm ../bios/5200.rom
+rm ../bios/64DD_IPL.bin
 rm ../bios/tos.img
 rm ../bios/tos100fr.img
 rm ../bios/tos100uk.img
@@ -113,6 +116,7 @@ rm ../bios/panafz10.bin
 rm ../bios/goldstar.bin
 rm ../bios/dc_boot.bin
 rm ../bios/dc_flash.bin
+rm ../bios/dc/dc_boot.bin
 rm ../bios/dc/naomi.zip
 rm ../bios/dc/awbios.zip
 rm ../bios/bios_CD_E.bin
@@ -349,6 +353,10 @@ rm ../bios/GC/USA/IPL.bin
 #rm ../bios/nb_48gc.zip
 #rm ../bios/votrax.zip
 rm ../bios/cerbios.bin
+rm ../bios/Oric/basic11.rom
+rm ../bios/Oric/colour.rom
+rm ../bios/psvita/PSP2UPDAT.PUP
+rm ../bios/psvita/PSVUPDAT.PUP
 echo
 echo "Sistema listo para su correcta instalacion"
 echo "System ready for right installation"
@@ -433,6 +441,13 @@ echo
 wget -c "${RUTA}o2rom.bin" -P ../bios/
 wget -c "${RUTA}c52.bin" -P ../bios/
 echo
+echo "###### Oric Atmos ######"
+# https://github.com/TomHarte/CLK
+echo
+wget -c "${RUTA}Oric/basic11.rom" -P ../bios/Oric/
+wget -c "${RUTA}Oric/colour.rom" -P ../bios/Oric/
+echo
+echo
 echo "###### Videopac+ G7400 ######"
 echo
 wget -c "${RUTA}g7400.bin" -P ../bios/
@@ -489,6 +504,8 @@ echo "###### SEGA DREAMCAST ######"
 echo
 wget -c "${RUTA}dc_boot.bin" -P ../bios/
 wget -c "${RUTA}dc_flash.bin" -P ../bios/
+wget -c "${RUTA}dc/dc_boot.bin" -P ../bios/dc/
+
 echo
 echo "###### SEGA NAOMI ######"
 # https://github.com/libretro/libretro-super/blob/master/dist/info/flycast_libretro.info
@@ -538,6 +555,12 @@ echo "###### SONY PS3 ######"
 echo
 wget -c "${RUTA_B}PS3UPDAT.PUP" -P ../bios/
 echo
+echo "###### SONY PSVita ######"
+# https://wiki.batocera.org/systems:psvita
+echo
+wget -c "${RUTA}psvita/PSP2UPDAT.PUP" -P ../bios/psvita/
+wget -c "${RUTA}psvita/PSVUPDAT.PUP" -P ../bios/psvita/
+echo
 echo "###### NINTENDO FAMILY DISK SYSTEM ######"
 # https://docs.libretro.com/library/fceumm/#bios
 echo
@@ -578,6 +601,10 @@ wget -c "${RUTA}sgb_boot.bin" -P ../bios/
 wget -c "${RUTA}sgb2_boot.bin" -P ../bios/
 wget -c "${RUTA}SGB1.sfc" -P ../bios/
 wget -c "${RUTA}SGB2.sfc" -P ../bios/
+echo
+echo "###### NINTENDO 64DD ######"
+echo
+wget -c "${RUTA}64DD_IPL.bin" -P ../bios/
 echo
 echo "###### Microsoft MSX ######"
 # https://docs.libretro.com/library/fmsx/#bios
