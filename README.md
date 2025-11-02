@@ -1,15 +1,15 @@
-<h1 align="center"> Batocera V41 Bios 2024</h1>
+<h1 align="center"> Batocera V42 Bios 2025</h1>
 <p align="center">
 Las Bios Correctas y necesarias para Batocera V41, sin archivos innecesarios.
 </p>
 <p align="center">
-The right Bios for Batocera V41 without unnecessary files.
+The right Bios for Batocera V42 without unnecessary files.
 </p>
 <p align="center">
 <img src="https://raw.githubusercontent.com/PIBSAS/RetroPieBios/master/logov3.png" alt="Raspberry Pi Buenos Aires" width="400" height="500">
 </p>
 
-<h2 align="center"> Raspberry Pi Bios Batocera V41</h2>
+<h2 align="center"> Raspberry Pi Bios Batocera V42</h2>
 
 ## Easy Install -- Instalación fácil para Raspberry Pi:
 
@@ -35,7 +35,7 @@ Type:
 curl -sSL https://raw.githubusercontent.com/PIBSAS/BatoceraV41Bios/main/pi.sh | bash
 ```
 
-<h2 align="center"> PC Bios Batocera V41 Butterfly</h2>
+<h2 align="center"> PC Bios Batocera V42</h2>
 
 ## Easy Install -- Instalación fácil PC:
 
