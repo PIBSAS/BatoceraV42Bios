@@ -1,6 +1,6 @@
 #!/bin/bash
 ###########################################################################
-# Repositorio: BatoceraV41Bios 2024
+# Repositorio: BatoceraV42Bios 2025
 # Por: Luciano's tech ("https://sites.google.com/view/lucianostech/)
 # License: http://creativecommons.org/licenses/by-sa/4.0/
 ###########################################################################
@@ -14,7 +14,7 @@ echo
 echo "Limpiando las bios basura que te descargaste de otro lado o las mismas si se te corto internet"
 echo "Cleaning the garbage bios downloaded from other sites or from this site but if you internet shutdown in the process"
 echo
-RUTA=https://raw.githubusercontent.com/PIBSAS/BatoceraV41Bios/main/bios/
+RUTA=https://raw.githubusercontent.com/PIBSAS/BatoceraV42Bios/main/bios/
 RUTA_ARCH="https://archive.org/download/bios_batocera/BatoceraV39Bios/bios/"
 RUTA_B="https://archive.org/download/bios_batocera/"
 echo
@@ -44,7 +44,6 @@ mkdir ../bios/GC/EUR
 mkdir ../bios/GC/JAP
 mkdir ../bios/GC/USA
 mkdir ../bios/Oric
-mkdir ../bios/psvita
 cd
 echo
 rm ../bios/ATARIOSA.ROM
@@ -547,12 +546,12 @@ echo "###### SONY PS2 ######"
 echo
 wget -c "${RUTA}ps2-0230a-20080220.bin" -P ../bios/ps2/
 echo
-echo "###### SONY PSVita ######"
+#echo "###### SONY PSVita ######"
 # https://wiki.batocera.org/systems:psvita
-echo
-wget -c "${RUTA_B}psvita/PSP2UPDAT.PUP" -P ../bios/psvita/
-wget -c "${RUTA_B}psvita/PSVUPDAT.PUP" -P ../bios/psvita/
-echo # I dont know compatibility yet
+#echo
+#wget -c "${RUTA_B}psvita/PSP2UPDAT.PUP" -P ../bios/psvita/
+#wget -c "${RUTA_B}psvita/PSVUPDAT.PUP" -P ../bios/psvita/
+#echo
 #echo "###### SONY PS3 ######"
 # https://www.playstation.com/en-us/support/system-updates/ps3/
 echo
