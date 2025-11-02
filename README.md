@@ -1,6 +1,6 @@
 <h1 align="center"> Batocera V42 Bios 2025</h1>
 <p align="center">
-Las Bios Correctas y necesarias para Batocera V41, sin archivos innecesarios.
+Las Bios Correctas y necesarias para Batocera V42, sin archivos innecesarios.
 </p>
 <p align="center">
 The right Bios for Batocera V42 without unnecessary files.
@@ -18,7 +18,7 @@ The right Bios for Batocera V42 without unnecessary files.
 Type:
 
 ```
-curl -sSL https://raw.githubusercontent.com/PIBSAS/BatoceraV41Bios/main/pi.sh | bash
+curl -sSL https://raw.githubusercontent.com/PIBSAS/BatoceraV42Bios/main/pi.sh | bash
 ```
 
 ### Or Login through SSH -- O Nos conectamos por SSH:
@@ -32,7 +32,7 @@ Password: `linux`
 Type:
 
 ```
-curl -sSL https://raw.githubusercontent.com/PIBSAS/BatoceraV41Bios/main/pi.sh | bash
+curl -sSL https://raw.githubusercontent.com/PIBSAS/BatoceraV42Bios/main/pi.sh | bash
 ```
 
 <h2 align="center"> PC Bios Batocera V42</h2>
@@ -50,7 +50,7 @@ Password: `linux`
 Type:
 
 ```
-curl -sSL https://raw.githubusercontent.com/PIBSAS/BatoceraV41Bios/main/pc.sh | bash
+curl -sSL https://raw.githubusercontent.com/PIBSAS/BatoceraV42Bios/main/pc.sh | bash
 ```
 ### Enjoy!!! --- A disfrutar!!!
 
