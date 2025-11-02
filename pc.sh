@@ -504,7 +504,7 @@ echo "###### SEGA DREAMCAST ######"
 echo
 wget -c "${RUTA}dc_boot.bin" -P ../bios/
 wget -c "${RUTA}dc_flash.bin" -P ../bios/
-wget -c "${RUTA}dc/dc_boot.bin" -P ../bios/dc/
+wget -c "${RUTA}dc_boot.bin" -P ../bios/dc/
 
 echo
 echo "###### SEGA NAOMI ######"
